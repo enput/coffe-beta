@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--her starter vores html-->
+<html>
+<head>
+    <!--basic stuff. siger at hjemmesiden skal bruge UTF-8 samt linker til vores style.css file. udover det siger hvad titlen på siden hedder og giver den et icon-->
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Home - MoonLight Coffee</title>
+    <link rel="icon" href="images/moonlightnonBig.png">
+</head>
+<body>
+    <!-- banner er en class som er en samling over alt på hjemmesiden udover footeren-->
+    <div class="banner">
+        <!--navvigationsbar top venstre, gør at man kan hoppe i mellem siderne på hjemmesiden-->
+        <div class="navbar">
+            <img onclick="document.location='index.html'" src="images/moonlightnon.png" class="logo">
+            <ul>
+                <!--href="" referere til vores forskellige html filler, fungere som hyperlink-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#autofoot">Contact</a></li>
+            </ul>
+        </div>
+            <!--classen content indholder texten i midten af hjemmesiden samt de to knapper til at skiffte imellem siderne-->
+            <div class="content">
+                <h1>MOONLIGHT COFFEE</h1>
+                <p>Your best cup of coffee today, for your tomorrow’s best memories with your friends.<br>The best coffee straight from the moon. </p>
+                <div>
+                    <button onclick="document.location='products.html'" type="button"><span></span>PRODUCTS</button>
+                    <button onclick="document.location='about.html'" type="button"><span></span>ABOUT</button>
+                </div>
+            </div>
+    </div>
+    <!--footer er foden nederest på siden. den indholder information såsom addresse og hyperlinks til socialmedia eller vores email. -->
+    <footer class="footer" id="autofoot">
+        <div class="footer__addr">
+          <h1 class="footer__logo">MoonLight</h1> 
+          <h2>Contact</h2>
+          <!--information om addresse-->
+          <address>
+            Fensmark Kalkerupvej 14<br>
+            Zealand, DK<br>
+            4684<br>
+            Denmark<br>  
+            <a class="footer__btn" href="mailto:moonlightcoffee.ltd@gmail.com">Email Us</a>
+          </address>
+        </div>
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+            <ul class="nav__ul">
+              <li>
+                <a href="https://www.instagram.com/moonlightcoffee.ltd/">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.trustpilot.com/">Trustpilot</a>
+              </li>
+              <li>
+                <!--Newsletter er ikke linket op til noget, men er beholdt i koden som en stub-->
+                <a href="#">Newsletter</a>
+              </li>
+            </ul>
+          </li>
+          <!--sitemap er en samling af hyperlinks over siden placeret i footeren, de fungere ligesom vores navbar-->
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Sitemap</h2>
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="index.html">Contact</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            <ul class="nav__ul">
+              <li>
+                <a href="about.html">Return Policy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!--Copyright over hjemmesiden, skal lige siges vi ikke ejer domainet "moonlightcoffee.com" eller har oprettede et firma ved navn moonlightcoffee.ltd-->
+        <div class="legal">
+          <p>Copyright &copy;2022 Moonlightcoffee.ltd&nbsp;&nbsp; All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
+<!--her slutter vores html-->
